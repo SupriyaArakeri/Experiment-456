@@ -29,3 +29,18 @@ top=top-1;
 printf("%d popped from stack\n",e);
 }
 }
+void display()
+{
+int i;
+if(top==-1)
+{
+printf("stack empty!\n");
+}
+else
+{
+for(i=top;i>-1;i--)
+{
+printf("%d\n",stack[i]);
+}
+}
+}
