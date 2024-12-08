@@ -1,0 +1,17 @@
+
+void push()
+{
+int ele;
+if(top>stack_size)
+{
+printf("stack is empty");
+}
+else
+{
+printf("enter the element to push");
+scanf("%d",&ele);
+top=top+1;
+stack[top]=ele;
+}
+}
+}
