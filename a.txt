@@ -4,7 +4,7 @@ void push()
 int ele;
 if(top>stack_size)
 {
-printf("stack is empty");
+printf("stack is overflow\n");
 }
 else
 {
@@ -13,5 +13,19 @@ scanf("%d",&ele);
 top=top+1;
 stack[top]=ele;
 }
+}
+}
+void pop()
+{
+int e;
+if(top==-1)
+{
+printf("stack is underflow\n");
+}
+else
+{
+e=stack[top];
+top=top-1;
+printf("%d popped from stack\n",e);
 }
 }
